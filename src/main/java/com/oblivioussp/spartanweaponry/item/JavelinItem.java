@@ -17,7 +17,7 @@ public class JavelinItem extends ThrowingWeaponItem
 {
 	public JavelinItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn) 
 	{
-		super(prop, material, archetypeIn, Defaults.DamageBaseJavelin, Defaults.DamageMultiplierJavelin, Defaults.MeleeSpeedJavelin, 4, Defaults.ChargeTicksJavelin);
+		super(prop, material, archetypeIn, Defaults.DamageBaseJavelin, Defaults.DamageMultiplierJavelin, Defaults.MeleeSpeedJavelin, Defaults.MaxAmmoJavelin, Defaults.ChargeTicksJavelin);
 		this.throwVelocity = 2.4f;
 	}
 	

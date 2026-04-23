@@ -18,7 +18,7 @@ public class TomahawkItem extends ThrowingWeaponItem
 
 	public TomahawkItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn) 
 	{
-		super(prop, material, archetypeIn, Defaults.DamageBaseTomahawk, Defaults.DamageMultiplierTomahawk, Defaults.MeleeSpeedTomahawk, 8, Defaults.ChargeTicksTomahawk);
+		super(prop, material, archetypeIn, Defaults.DamageBaseTomahawk, Defaults.DamageMultiplierTomahawk, Defaults.MeleeSpeedTomahawk, Defaults.MaxAmmoTomahawk, Defaults.ChargeTicksTomahawk);
 		this.throwVelocity = 1.75f;
 	}
 	

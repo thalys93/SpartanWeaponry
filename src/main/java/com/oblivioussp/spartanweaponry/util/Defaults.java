@@ -109,15 +109,17 @@ public class Defaults
 	
 	// Tomahawk
 	public static final float MeleeSpeedTomahawk = 0.9f;
-	public static final float DamageBaseTomahawk = 2.0f;
-	public static final float DamageMultiplierTomahawk = 1.5f;
+	public static final float DamageBaseTomahawk = 3.0f;
+	public static final float DamageMultiplierTomahawk = 2.0f;
 	public static final int ChargeTicksTomahawk = 8;
+	public static final int MaxAmmoTomahawk = 20;
 	
 	// Javelin
 	public static final float MeleeSpeedJavelin = 1.2f;
 	public static final float DamageBaseJavelin = 1.5f;
 	public static final float DamageMultiplierJavelin = 1.0f;
 	public static final int ChargeTicksJavelin = 10;
+	public static final int MaxAmmoJavelin = 20;
 	
 	// Boomerang
 	public static final float MeleeSpeedBoomerang = 2.0f;
