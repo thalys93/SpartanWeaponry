@@ -16,14 +16,17 @@ import net.minecraft.world.level.Level;
 public class ThrowingKnifeItem extends ThrowingWeaponItem 
 {
 
-	public ThrowingKnifeItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn) 
+	public ThrowingKnifeItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn,
+			float weaponBaseDamage)
 	{
-		super(prop, material, archetypeIn, Defaults.DamageBaseThrowingKnife, Defaults.DamageMultiplierThrowingKnife, Defaults.MeleeSpeedThrowingKnife, 16, Defaults.ChargeTicksThrowingKnife);
+		super(prop, material, archetypeIn, weaponBaseDamage, Defaults.DamageMultiplierThrowingKnife,
+				Defaults.MeleeSpeedThrowingKnife, 16, Defaults.ChargeTicksThrowingKnife);
 	}
 	
-	public ThrowingKnifeItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn, String customDisplayName)
+	public ThrowingKnifeItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn,
+			float weaponBaseDamage, String customDisplayName)
 	{
-		this(prop, material, archetypeIn);
+		this(prop, material, archetypeIn, weaponBaseDamage);
 		if(material.useCustomDisplayName())
 			this.customDisplayName = customDisplayName;
 	}

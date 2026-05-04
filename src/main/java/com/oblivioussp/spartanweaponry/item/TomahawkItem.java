@@ -16,15 +16,18 @@ import net.minecraft.world.level.Level;
 public class TomahawkItem extends ThrowingWeaponItem 
 {
 
-	public TomahawkItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn) 
+	public TomahawkItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn,
+			float weaponBaseDamage)
 	{
-		super(prop, material, archetypeIn, Defaults.DamageBaseTomahawk, Defaults.DamageMultiplierTomahawk, Defaults.MeleeSpeedTomahawk, Defaults.MaxAmmoTomahawk, Defaults.ChargeTicksTomahawk);
+		super(prop, material, archetypeIn, weaponBaseDamage, Defaults.DamageMultiplierTomahawk, Defaults.MeleeSpeedTomahawk,
+				Defaults.MaxAmmoTomahawk, Defaults.ChargeTicksTomahawk);
 		this.throwVelocity = 1.75f;
 	}
 	
-	public TomahawkItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn, String customDisplayName)
+	public TomahawkItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn,
+			float weaponBaseDamage, String customDisplayName)
 	{
-		this(prop, material, archetypeIn);
+		this(prop, material, archetypeIn, weaponBaseDamage);
 		if(material.useCustomDisplayName())
 			this.customDisplayName = customDisplayName;
 	}

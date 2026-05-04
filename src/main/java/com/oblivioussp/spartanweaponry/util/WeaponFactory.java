@@ -88,15 +88,27 @@ public class WeaponFactory
 	};
 		
 	public static final WeaponFunction<ThrowingWeaponItem> THROWING_KNIFE = (material, prop) -> {
-		return new ThrowingKnifeItem(prop, material, WeaponArchetype.THROWING_KNIFE, "item." + ModSpartanWeaponry.ID + ".custom_throwing_knife");
+		float baseDamage = ThrowingWeaponMaterialDamageTune.baseWeaponDamageConstantMatchingDesiredDirectAttackDamage(
+				Defaults.vanillaMetalThrowableDirectDamageTier, material, Defaults.DamageBaseThrowingKnife,
+				Defaults.DamageMultiplierThrowingKnife);
+		return new ThrowingKnifeItem(prop, material, WeaponArchetype.THROWING_KNIFE, baseDamage,
+				"item." + ModSpartanWeaponry.ID + ".custom_throwing_knife");
 	};
 		
 	public static final WeaponFunction<ThrowingWeaponItem> TOMAHAWK = (material, prop) -> {
-		return new TomahawkItem(prop, material, WeaponArchetype.TOMAHAWK, "item." + ModSpartanWeaponry.ID + ".custom_tomahawk");
+		float baseDamage = ThrowingWeaponMaterialDamageTune.baseWeaponDamageConstantMatchingDesiredDirectAttackDamage(
+				Defaults.vanillaMetalThrowableDirectDamageTier, material, Defaults.DamageBaseTomahawk,
+				Defaults.DamageMultiplierTomahawk);
+		return new TomahawkItem(prop, material, WeaponArchetype.TOMAHAWK, baseDamage,
+				"item." + ModSpartanWeaponry.ID + ".custom_tomahawk");
 	};
 		
 	public static final WeaponFunction<ThrowingWeaponItem> JAVELIN = (material, prop) -> {
-		return new JavelinItem(prop, material, WeaponArchetype.JAVELIN, "item." + ModSpartanWeaponry.ID + ".custom_javelin");
+		float baseDamage = ThrowingWeaponMaterialDamageTune.baseWeaponDamageConstantMatchingDesiredDirectAttackDamage(
+				Defaults.vanillaMetalThrowableDirectDamageTier, material, Defaults.DamageBaseJavelin,
+				Defaults.DamageMultiplierJavelin);
+		return new JavelinItem(prop, material, WeaponArchetype.JAVELIN, baseDamage,
+				"item." + ModSpartanWeaponry.ID + ".custom_javelin");
 	};
 		
 	public static final WeaponFunction<ThrowingWeaponItem> BOOMERANG = (material, prop) -> {

@@ -15,15 +15,18 @@ import net.minecraft.world.level.Level;
 
 public class JavelinItem extends ThrowingWeaponItem 
 {
-	public JavelinItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn) 
+	public JavelinItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn,
+			float weaponBaseDamage)
 	{
-		super(prop, material, archetypeIn, Defaults.DamageBaseJavelin, Defaults.DamageMultiplierJavelin, Defaults.MeleeSpeedJavelin, Defaults.MaxAmmoJavelin, Defaults.ChargeTicksJavelin);
+		super(prop, material, archetypeIn, weaponBaseDamage, Defaults.DamageMultiplierJavelin, Defaults.MeleeSpeedJavelin,
+				Defaults.MaxAmmoJavelin, Defaults.ChargeTicksJavelin);
 		this.throwVelocity = 2.4f;
 	}
 	
-	public JavelinItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn, String customDisplayName)
+	public JavelinItem(Item.Properties prop, WeaponMaterial material, WeaponArchetype archetypeIn,
+			float weaponBaseDamage, String customDisplayName)
 	{
-		this(prop, material, archetypeIn);
+		this(prop, material, archetypeIn, weaponBaseDamage);
 		if(material.useCustomDisplayName())
 			this.customDisplayName = customDisplayName;
 	}

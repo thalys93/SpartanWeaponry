@@ -106,6 +106,8 @@ public class Defaults
 	public static final float DamageBaseThrowingKnife = 1.5f;
 	public static final float DamageMultiplierThrowingKnife = 1.0f;
 	public static final int ChargeTicksThrowingKnife = 5;
+	public static final ThrowingWeaponMaterialDamageTune.VanillaMetalThrowingDamageTiers vanillaMetalThrowableDirectDamageTier = new ThrowingWeaponMaterialDamageTune.VanillaMetalThrowingDamageTiers(
+			15.0f, 13.0f, 16.0f, 17.0f);
 	
 	// Tomahawk
 	public static final float MeleeSpeedTomahawk = 0.9f;
